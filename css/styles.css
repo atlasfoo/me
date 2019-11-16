@@ -34,6 +34,7 @@ header .logo p {
   color: #777777;
 }
 
+/* Extends */
 header .menu {
   padding: 0;
 }
@@ -234,6 +235,37 @@ header .menu-c3:hover {
   background: #833ab4;
 }
 
+.links {
+  padding: 30px;
+  margin-bottom: 30px;
+}
+.links .menu--inf {
+  height: 40px;
+  text-align: center;
+}
+.links .menu--inf--1 {
+  background-color: #1ba0ef;
+}
+.links .menu--inf--2 {
+  background-color: #545454;
+}
+.links .menu--inf--3 {
+  background-color: #005385;
+}
+.links .menu--inf a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 0 30px;
+}
+.links .menu a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 0 30px;
+}
+
+/*scholarity.htm*/
 /* MEDIA QUERIES */
 @media screen and (max-width: 991px) {
   .logo {
@@ -299,7 +331,8 @@ header .menu-c3:hover {
     text-align: center;
   }
 
-  header .logo h2, header .logo p {
+  header .logo h2,
+header .logo p {
     font-size: 12px;
   }
 
