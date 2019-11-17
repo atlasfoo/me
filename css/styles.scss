@@ -292,6 +292,26 @@ header .menu-c3:hover {
 
 /*scholarity.htm*/
 
+.schol {
+    .jumbotron {
+        margin: 0;
+        color: $a-blueh;
+        text-align: center;
+        height: 50px;
+    }
+    .s-list {
+        margin-top: 20px;
+        border-top: $a-blueh solid 5px;
+        ul {
+            margin-top: 15px;
+        }
+        .list-index {
+            font-weight: 500;
+            color: $b-blue;
+        }
+    }
+}
+
 
 /* MEDIA QUERIES */
 

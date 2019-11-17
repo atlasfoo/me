@@ -266,6 +266,24 @@ header .menu-c3:hover {
 }
 
 /*scholarity.htm*/
+.schol .jumbotron {
+  margin: 0;
+  color: #1ba0ef;
+  text-align: center;
+  height: 50px;
+}
+.schol .s-list {
+  margin-top: 20px;
+  border-top: #1ba0ef solid 5px;
+}
+.schol .s-list ul {
+  margin-top: 15px;
+}
+.schol .s-list .list-index {
+  font-weight: 500;
+  color: #005385;
+}
+
 /* MEDIA QUERIES */
 @media screen and (max-width: 991px) {
   .logo {
