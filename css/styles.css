@@ -203,6 +203,15 @@ header .menu-c3:hover {
   font-family: "Roboto", sans-serif;
 }
 
+.titulo {
+  color: #003855;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-weight: 300;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
 .social-media {
   padding: 40px 0;
   margin-bottom: 40px;
@@ -233,6 +242,10 @@ header .menu-c3:hover {
 
 .social-media .ig {
   background: #833ab4;
+}
+
+.social-media .mail {
+  background: #545454;
 }
 
 .links {
@@ -308,6 +321,11 @@ header .menu-c3:hover {
 }
 
 /* MEDIA QUERIES */
+@media screen and (max-width: 1199px) {
+  .carousel img {
+    min-width: 100%;
+  }
+}
 @media screen and (max-width: 991px) {
   .logo {
     height: 76px;

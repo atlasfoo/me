@@ -224,6 +224,15 @@ header .menu-c3:hover {
     font-family: 'Roboto', sans-serif;
 }
 
+.titulo {
+    color: $c-blue;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-weight: 300;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
 //social-media
 .social-media {
     padding: 40px 0;
@@ -255,6 +264,10 @@ header .menu-c3:hover {
 
 .social-media .ig {
     background: $ig-purple;
+}
+
+.social-media .mail {
+    background: $stone-gray;
 }
 
 .links {
@@ -347,7 +360,11 @@ header .menu-c3:hover {
 /* MEDIA QUERIES */
 
 //xl
-@media screen and (max-width: 1199px) {}
+@media screen and (max-width: 1199px) {
+    .carousel img {
+        min-width: 100%;
+    }
+}
 
 //lg
 @media screen and (max-width: 991px) {
