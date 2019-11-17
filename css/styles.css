@@ -240,7 +240,7 @@ header .menu-c3:hover {
   margin-bottom: 30px;
 }
 .links .menu--inf {
-  height: 40px;
+  height: 50px;
   text-align: center;
 }
 .links .menu--inf--1 {
@@ -265,13 +265,14 @@ header .menu-c3:hover {
   padding: 0 30px;
 }
 
-/*scholarity.htm*/
-.schol .jumbotron {
+.jumbotron {
   margin: 0;
   color: #1ba0ef;
   text-align: center;
   height: 50px;
 }
+
+/*scholarity.htm*/
 .schol .s-list {
   margin-top: 20px;
   border-top: #1ba0ef solid 5px;
@@ -280,6 +281,28 @@ header .menu-c3:hover {
   margin-top: 15px;
 }
 .schol .s-list .list-index {
+  font-weight: 500;
+  color: #005385;
+}
+
+/*Projects*/
+.proj-table-cont {
+  margin-top: 20px;
+  border-top: #1ba0ef solid 5px;
+}
+.proj-table-cont table tbody tr td .btn-light {
+  border: #777777 solid 1px;
+}
+
+/*Works*/
+.werks .s-list {
+  margin-top: 20px;
+  border-top: #1ba0ef solid 5px;
+}
+.werks .s-list ul {
+  margin-top: 15px;
+}
+.werks .s-list .list-index {
   font-weight: 500;
   color: #005385;
 }

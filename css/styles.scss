@@ -262,7 +262,7 @@ header .menu-c3:hover {
     margin-bottom: 30px;
     .menu {
         &--inf {
-            height: 40px;
+            height: 50px;
             text-align: center;
             &--1 {
                 background-color: $a-blueh;
@@ -289,16 +289,47 @@ header .menu-c3:hover {
     }
 }
 
+.jumbotron {
+    margin: 0;
+    color: $a-blueh;
+    text-align: center;
+    height: 50px;
+}
+
 
 /*scholarity.htm*/
 
 .schol {
-    .jumbotron {
-        margin: 0;
-        color: $a-blueh;
-        text-align: center;
-        height: 50px;
+    .s-list {
+        margin-top: 20px;
+        border-top: $a-blueh solid 5px;
+        ul {
+            margin-top: 15px;
+        }
+        .list-index {
+            font-weight: 500;
+            color: $b-blue;
+        }
     }
+}
+
+
+/*Projects*/
+
+.proj-table-cont {
+    margin-top: 20px;
+    border-top: $a-blueh solid 5px;
+    table tbody tr td {
+        .btn-light {
+            border: $dgrey solid 1px;
+        }
+    }
+}
+
+
+/*Works*/
+
+.werks {
     .s-list {
         margin-top: 20px;
         border-top: $a-blueh solid 5px;
