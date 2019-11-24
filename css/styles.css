@@ -401,6 +401,15 @@ header .logo p {
     line-height: 50px;
     font-size: 20px;
   }
+
+  .table-cont {
+    display: block;
+    overflow-y: scroll;
+  }
+
+  .jumbotron {
+    height: 150px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
