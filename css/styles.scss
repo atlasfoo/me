@@ -12,9 +12,79 @@ $egray: #cbcbcb;
 $tw-skyblue: #1da1f2;
 $fb-blue: #3b5998;
 $ig-purple: #833ab4;
+$lang-col: #6d0a70;
+$fends-col: #1a1a70;
+$bkends-col: #772020;
+
+#lang-toggle{
+    h2::after{
+        display: inline;
+        font-family: 'FontAwesome', sans-serif;
+        content: "\f107";
+        transition: all .3s;
+    }
+    &[aria-expanded='true']{
+        h2::after{
+            content: '\f106';
+        }
+    }
+}
+
+#bkends-toggle{
+    h4::after{
+        display: inline;
+        font-family: 'FontAwesome', sans-serif;
+        content: "\f107";
+        transition: all .3s;
+    }
+    &[aria-expanded='true']{
+        h4::after{
+            content: '\f106';
+        }
+    }
+}
+
+#fends-toggle{
+    h4::after{
+        display: inline;
+        font-family: 'FontAwesome', sans-serif;
+        content: "\f107";
+        transition: all .3s;
+    }
+    &[aria-expanded='true']{
+        h4::after{
+            content: '\f106';
+        }
+    }
+}
+
+
+.bkends{
+    color: $bkends-col;
+}
+.fends{
+    color: $fends-col;
+}
+.lang{
+    color: $lang-col;
+}
+
+
+
+hr.style-two {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    margin: 35px 0;
+}
+
 body {
     background: $pwhite;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 header {
@@ -273,19 +343,28 @@ header .menu-c3:hover {
 .links {
     padding: 30px;
     margin-bottom: 30px;
+
     .menu {
         &--inf {
             height: 50px;
             text-align: center;
+
             &--1 {
                 background-color: $a-blueh;
             }
+
             &--2 {
                 background-color: $stone-gray;
             }
+
             &--3 {
                 background-color: $b-blue;
             }
+
+            i::before{
+                color: #fff;
+            }
+
             a {
                 display: block;
                 text-decoration: none;
@@ -293,6 +372,7 @@ header .menu-c3:hover {
                 padding: 0 30px;
             }
         }
+
         a {
             display: block;
             text-decoration: none;
@@ -316,9 +396,11 @@ header .menu-c3:hover {
     .s-list {
         margin-top: 20px;
         border-top: $a-blueh solid 5px;
+
         ul {
             margin-top: 15px;
         }
+
         .list-index {
             font-weight: 500;
             color: $b-blue;
@@ -332,6 +414,7 @@ header .menu-c3:hover {
 .proj-table-cont {
     margin-top: 20px;
     border-top: $a-blueh solid 5px;
+
     table tbody tr td {
         .btn-light {
             border: $dgrey solid 1px;
@@ -346,9 +429,11 @@ header .menu-c3:hover {
     .s-list {
         margin-top: 20px;
         border-top: $a-blueh solid 5px;
+
         ul {
             margin-top: 15px;
         }
+
         .list-index {
             font-weight: 500;
             color: $b-blue;
@@ -371,43 +456,56 @@ header .menu-c3:hover {
     .logo {
         height: 76px;
     }
+
     .menu {
         min-height: 76px;
     }
+
     .menu a {
         width: 100%;
     }
+
     .menu div {
         width: 100%;
     }
+
     .portafolio .galeria .cont-img:nth-child(1) {
         order: 1;
     }
+
     .portafolio .galeria .cont-img:nth-child(2) {
         order: 3;
     }
+
     .portafolio .galeria .cont-img:nth-child(3) {
         order: 6;
     }
+
     .portafolio .galeria .cont-img:nth-child(4) {
         order: 2;
     }
+
     .portafolio .galeria .cont-img:nth-child(5) {
         order: 4;
     }
+
     .portafolio .galeria .cont-img:nth-child(6) {
         order: 5;
     }
+
     .portafolio .galeria .cont-img:nth-child(7) {
         order: 7;
     }
+
     .modal .modal-dialog {
         width: 90%;
     }
+
     .modal .modal-dialog .modal-content {
         width: 100%;
         margin-left: 25px;
     }
+
     .modal .modal-dialog .modal-content img {
         width: 100%
     }
@@ -422,20 +520,24 @@ header .menu-c3:hover {
         margin-top: 0;
         text-align: center;
     }
+
     header .logo h2,
     header .logo p {
         font-size: 12px;
     }
+
     .social-media .icono {
         width: 50px;
         height: 50px;
         line-height: 50px;
         font-size: 20px;
     }
+
     .table-cont {
         display: block;
         overflow-y: scroll;
     }
+
     .jumbotron {
         height: 150px;
     }

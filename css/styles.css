@@ -1,6 +1,60 @@
+@charset "UTF-8";
+#lang-toggle h2::after {
+  display: inline;
+  font-family: "FontAwesome", sans-serif;
+  content: "";
+  transition: all 0.3s;
+}
+#lang-toggle[aria-expanded=true] h2::after {
+  content: "";
+}
+
+#bkends-toggle h4::after {
+  display: inline;
+  font-family: "FontAwesome", sans-serif;
+  content: "";
+  transition: all 0.3s;
+}
+#bkends-toggle[aria-expanded=true] h4::after {
+  content: "";
+}
+
+#fends-toggle h4::after {
+  display: inline;
+  font-family: "FontAwesome", sans-serif;
+  content: "";
+  transition: all 0.3s;
+}
+#fends-toggle[aria-expanded=true] h4::after {
+  content: "";
+}
+
+.bkends {
+  color: #772020;
+}
+
+.fends {
+  color: #1a1a70;
+}
+
+.lang {
+  color: #6d0a70;
+}
+
+hr.style-two {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  margin: 35px 0;
+}
+
 body {
   background: #f2f2f2;
-  font-family: "Roboto", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 header {
@@ -264,6 +318,9 @@ header .menu-c3:hover {
 }
 .links .menu--inf--3 {
   background-color: #005385;
+}
+.links .menu--inf i::before {
+  color: #fff;
 }
 .links .menu--inf a {
   display: block;
