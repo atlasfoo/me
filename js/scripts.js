@@ -1,3 +1,4 @@
+
 $(function(){
     $('.galeria .cont-img').on('click', function(){
         $('#modal').modal;
